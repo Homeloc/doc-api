@@ -18,6 +18,7 @@ Our APIs rely on `Django Rest Framework <http://www.django-rest-framework.org/>`
    :maxdepth: 2
 
    authentication
+   response
 
 
 
