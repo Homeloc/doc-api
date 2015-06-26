@@ -12,8 +12,12 @@ Here you will learn how to import data from our servers and ultimately take book
 Note that our API is private, and you will need a login and a password to be able to access it.
 Ask your Homeloc contact for one if you haven't already.
 
+Our APIs rely on `Django Rest Framework <http://www.django-rest-framework.org/>`_. Thus you should be able to explore the API with your browser by just going to our APIs url. This might come in handy :)
+
 .. toctree::
    :maxdepth: 2
+
+   authentication
 
 
 
