@@ -14,11 +14,14 @@ Ask your Homeloc contact for one if you haven't already.
 
 Our APIs rely on `Django Rest Framework <http://www.django-rest-framework.org/>`_. Thus you should be able to explore the API with your browser by just going to our APIs url. This might come in handy :)
 
+The public Github repository for this documentation can be found `here <https://github.com/Homeloc/doc-api/>`_. Do not hesitate to report issues in this documentation there.
+
 .. toctree::
    :maxdepth: 2
 
    authentication
    response
+   rental
 
 
 
