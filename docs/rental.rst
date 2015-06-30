@@ -63,7 +63,7 @@ Booking information fields
 
 * ``maximal_person_number``: The maximum of guests this rental can hold
 
-* ``availabilities``: Contains a list of availabilities for this rental. These periods might be out of date (by ~15 minutes), see the ``unavailability_api_feed`` field for more info.
+* ``availabilities``: Contains a list of availabilities for this rental. There periods are cached and might not be up to date (they are updated every 15 minutes)
 
 Availabilities structure
 ************************
@@ -109,7 +109,7 @@ Let's see which nights are bookable based on these periods:
 Other fields
 ############
 
-* ``unavailability_api_feed``: Url for the freshest (un)availabilities for this rental. If empty, you are already getting the freshest availabilities. Otherwise you might be getting cached availabilities
+* ``unavailability_api_feed``: Used for internal purposes
 
 * ``activated``: Used for internal purposes
 
