@@ -3,6 +3,13 @@ Rental API
 
 The Rental API lets you fetch "cold" data pertaining to the rental. It contains both editorial content (title, description, pictures, etc.) and booking data (minimum duration, availabilities etc.).
 
+
+URL
+###
+
+This api endpoint is accessible at ``/api/rentals/`` via GET
+
+
 Editorial content fields
 ########################
 
@@ -54,6 +61,7 @@ These fields are not normalized, they should be used to display informations to 
 
 * ``price``: Contains **editorial content** about this rental's price. It can contains a dictionary with the keys ``min`` and ``type`` or just a value. Do not use this price to make booking.
 
+
 Booking information fields
 ##########################
 
@@ -65,7 +73,10 @@ Booking information fields
 
 * ``availabilities``: Contains a list of availabilities for this rental. There periods are cached and might not be up to date (they are updated every 15 minutes)
 
-* ``sub_instance_url``: The base url that you will need to use for booking api calls. If empty, you are already using the right url.
+* ``sub_instance_url``: The base url that you will need to use for all the booking api calls. If empty, you are already using the right url.
+
+* ``source_id``: ID of the rental. Will be used for all future booking api calls.
+
 
 Availabilities structure
 ************************
@@ -118,8 +129,6 @@ Other fields
 * ``creation_date``: Creation date of the model, should not be useful to you
 
 * ``update_date``: Update date of the model, should not be useful to you
-
-* ``source_id``: External ID of the model, may not be unique!
 
 * ``id``: Internal ID of the model, should not be useful for you
 

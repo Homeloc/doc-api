@@ -22,6 +22,7 @@ The public Github repository for this documentation can be found `here <https://
    authentication
    response
    rental
+   availability_check
 
 
 
