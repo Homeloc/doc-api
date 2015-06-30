@@ -65,6 +65,8 @@ Booking information fields
 
 * ``availabilities``: Contains a list of availabilities for this rental. There periods are cached and might not be up to date (they are updated every 15 minutes)
 
+* ``sub_instance_url``: The base url that you will need to use for booking api calls. If empty, you are already using the right url.
+
 Availabilities structure
 ************************
 
