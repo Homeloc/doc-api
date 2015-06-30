@@ -40,7 +40,7 @@ Here is an example of a valid response::
         'url_review': 'http://example.homelocpay.net/fr/bookingengine/{hashed_key}/review/',
     }
 
-The ``status`` key indicates if the call you made was valid (``ok`` means valid).
+The ``status`` key indicates if the call you made was valid and a booking is possible.
 
 The ``price`` key contains an **approximate** price for the stay. This price is not definitive and might change (if you add options to the stay, if some guests are below a certain age etc.). It can be used to show an estimate to the client.
 
@@ -58,7 +58,7 @@ Here is an example of an invalid response::
         'error': 'Period not available'
     }
 
-The ``status`` key is not ``ok``, the call you made was not valid (meaning it doesn't lead to a possible booking).
+The ``status`` is not ``ok``, the call you made was not valid or it was valid but a booking is not possible.
 
 The ``code`` contains a string telling you what the problem is. You should use this to handle the API's response. See below for the possible values.
 
@@ -87,6 +87,7 @@ Possible error codes
 
 Examples
 ########
+
 
 Valid call that leads to a booking
 **********************************
@@ -132,7 +133,6 @@ curl
  ::
 
     curl 'https://example.homelocpay.net/en/bookingengine/check_availability/' --data 'start=19/09/2015&end=18/09/2015&rental=6&origin=My+Partner+Name'
-
 
 API response
 ------------

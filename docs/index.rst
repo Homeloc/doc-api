@@ -23,6 +23,7 @@ The public Github repository for this documentation can be found `here <https://
    response
    rental
    availability_check
+   price_check
 
 
 
