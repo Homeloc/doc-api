@@ -26,13 +26,3 @@ The public Github repository for this documentation can be found `here <https://
    price_check
    booking
    cancellation
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
