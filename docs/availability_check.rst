@@ -5,6 +5,7 @@ This endpoint lets you find out if a rental is available for particular dates. S
 
 This endpoint does not need authentication (we use it internally for AJAX calls).
 
+
 URL
 ###
 
@@ -64,6 +65,9 @@ The ``code`` contains a string telling you what the problem is. You should use t
 
 ``error`` contains a string that you can show to the client to explain why the call did not lead to a booking.
 
+
+.. _availability_check_error_codes:
+
 Possible error codes
 --------------------
 
@@ -79,10 +83,9 @@ Possible error codes
 
 * ``max_duration``: The stay you specified does not respect the maximum booking duration (see the Rental API)
 
-* ``too_close``: The stay you specified is too close. Some rentals need to be booked in advance (usually a couple of days).
+* ``too close``: The stay you specified is too close. Some rentals need to be booked in advance (usually a couple of days).
 
-* ``too_far``: The stay you specified is too far. Some rentals cannot be booked too long in advance (usually more than a year).
-
+* ``too far``: The stay you specified is too far. Some rentals cannot be booked too long in advance (usually more than a year).
 
 
 Examples

@@ -1,7 +1,7 @@
 Authentication
 ===================================
 
-Our APIs use `Basic access authentication <https://en.wikipedia.org/wiki/Basic_access_authentication>`_ for every API endpoint.
+Our APIs use `Basic access authentication <https://en.wikipedia.org/wiki/Basic_access_authentication>`_ for the majority of our API endpoints. Some do not need authentication, it is specified when this is the case.
 
 If you do not have a login and a password, ask your Homeloc contact for one. We will create one for you to access all our APIs.
 

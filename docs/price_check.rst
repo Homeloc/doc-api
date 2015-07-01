@@ -22,8 +22,10 @@ Expected fields
 
 * ``rental``: The ID of the rental (see the Rental api endpoint)
 
-* ``birth_dates``: A list of the guests birthdates. Birth dates should have the format ``YYYY-MM-DD`` and be separated by commas.
+* ``birth_dates``: A list of the guests' birth dates. Birth dates should have the format ``YYYY-MM-DD`` and be separated by commas.
 
+
+.. _birth_dates_detail:
 
 Details for birth dates
 ***********************
