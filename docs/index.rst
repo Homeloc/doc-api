@@ -20,6 +20,7 @@ The public Github repository for this documentation can be found `here <https://
    :maxdepth: 2
 
    funnel_example
+   staging
    authentication
    response
    rental
